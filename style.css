@@ -1,0 +1,101 @@
+body {
+    font-family: san-serif;
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+    background: #f4f4f9;
+}
+
+.container {
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+}
+
+.input-group {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+input {
+    flex-grow: 1;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+button {
+    background: #5c67f2;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    background: #eee;
+    margin-bottom: 5px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 4px;
+    cursor: pointer; /* Makes it obvious you can click the task */
+}
+
+.delete-btn {
+    color: red;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.completed {
+    text-decoration: line-through;
+    color: #888;
+    background-color: #f9f9f9;
+}
+
+.clear-btn {
+    width: 100%;
+    margin-top: 15px;
+    background: #ff4d4d;
+    font-size: 0.8rem;
+}
+
+.filters {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 15px;
+}
+
+.filters button {
+    background: #e0e0e0;
+    color: #333;
+    font-size: 0.7rem;
+    padding: 5px 10px;
+}
+
+/* For screens smaller than 480px (most phones) */
+@media (max-width: 480px) {
+    .container {
+        width: 90%; /* Use more of the screen width */
+        padding: 1.5rem;
+    }
+
+    input, button {
+        padding: 12px; /* Bigger touch targets for fingers */
+        font-size: 1rem;
+    }
+
+    .delete-btn {
+        padding: 5px 10px; /* Easier to hit the 'X' */
+    }
+}
